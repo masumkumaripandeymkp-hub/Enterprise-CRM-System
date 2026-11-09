@@ -1,0 +1,209 @@
+.leads-page {
+padding: 25px;
+background: #f8fafc;
+min-height: calc(100vh - 90px);
+}
+
+.leads-header {
+margin-bottom: 25px;
+}
+
+.leads-header h2 {
+font-size: 26px;
+color: #1e293b;
+margin-bottom: 8px;
+}
+
+.leads-header p {
+color: #64748b;
+font-size: 14px;
+}
+
+/* Lead form */
+
+.lead-form {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+background: white;
+padding: 22px;
+border-radius: 12px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+margin-bottom: 25px;
+}
+
+.lead-form input,
+.lead-form select,
+.leads-search {
+padding: 12px 15px;
+border: 1px solid #e2e8f0;
+border-radius: 7px;
+outline: none;
+font-size: 14px;
+}
+
+.lead-form input {
+flex: 1;
+min-width: 180px;
+}
+
+.lead-form select {
+min-width: 160px;
+background: white;
+}
+
+.lead-form input:focus,
+.lead-form select:focus,
+.leads-search:focus {
+border-color: #4f46e5;
+}
+
+.lead-form button {
+padding: 12px 22px;
+background: #4f46e5;
+color: white;
+border: none;
+border-radius: 7px;
+cursor: pointer;
+font-size: 14px;
+font-weight: 600;
+}
+
+.lead-form button:hover {
+background: #3730a3;
+}
+
+/* Search section */
+
+.leads-search {
+width: 100%;
+max-width: 350px;
+margin-bottom: 20px;
+background: white;
+}
+
+/* Leads table */
+
+.leads-table-container {
+background: white;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+overflow-x: auto;
+}
+
+.leads-table {
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.leads-table th {
+background: #f1f5f9;
+color: #475569;
+padding: 15px;
+font-size: 13px;
+}
+
+.leads-table td {
+padding: 15px;
+border-bottom: 1px solid #e2e8f0;
+color: #334155;
+font-size: 14px;
+}
+
+.leads-table tr:hover {
+background: #f8fafc;
+}
+
+.leads-table button {
+background: #fee2e2;
+color: #dc2626;
+border: none;
+padding: 8px 13px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.leads-table button:hover {
+background: #fecaca;
+}
+
+@media (max-width: 600px) {
+.leads-page {
+padding: 15px;
+}
+
+.lead-form {
+flex-direction: column;
+}
+
+.lead-form input,
+.lead-form select,
+.lead-form button {
+width: 100%;
+}
+}
+
+.total-leads-card {
+background: white;
+padding: 18px;
+margin-top: 20px;
+max-width: 220px;
+border-radius: 10px;
+border-left: 4px solid #4f46e5;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.total-leads-card h3 {
+color: #64748b;
+font-size: 14px;
+margin: 0;
+}
+
+.total-leads-card h2 {
+color: #4f46e5;
+font-size: 28px;
+margin: 8px 0;
+}
+
+.total-leads-card p {
+color: #64748b;
+font-size: 12px;
+margin: 0;
+}
+
+/* Lead Status Badges */
+
+.status-badge {
+display: inline-block;
+padding: 6px 12px;
+border-radius: 20px;
+font-size: 12px;
+font-weight: 600;
+}
+
+/* New - Blue */
+.status-badge.new {
+background: #dbeafe;
+color: #1d4ed8;
+}
+
+/* Contacted - Yellow */
+.status-badge.contacted {
+background: #fef3c7;
+color: #b45309;
+}
+
+/* Negotiation - Purple */
+.status-badge.negotiation {
+background: #ede9fe;
+color: #6d28d9;
+}
+
+/* Won - Green */
+.status-badge.won {
+background: #dcfce7;
+color: #15803d;
+}
+

@@ -1,0 +1,141 @@
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f5f9;
+}
+
+.register-box {
+    width: 400px;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.register-box h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.register-subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.register-input {
+    margin-bottom: 18px;
+}
+
+.register-input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.register-input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.register-input input:focus {
+    border-color: #2563eb;
+}
+
+.register-box button {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-box button:hover {
+    background: #1d4ed8;
+}
+
+.register-box button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.register-error {
+    color: #dc2626;
+    font-size: 14px;
+}
+
+.register-success {
+    color: #16a34a;
+    font-size: 14px;
+}
+
+.register-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-login a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Password Input Wrapper */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Password Input */
+.password-wrapper input {
+    width: 100%;
+    padding: 12px 65px 12px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Show / Hide Button */
+.register-box .password-wrapper .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+
+    width: auto;
+    padding: 5px;
+
+    background: transparent;
+    color: #2563eb;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Hover Effect */
+.register-box .password-wrapper .password-toggle:hover {
+    background: transparent;
+    color: #1d4ed8;
+}
+
+.password-toggle:hover,
+.password-toggle:focus {
+    background: transparent;
+    color: #1d4ed8;
+}
